@@ -4,7 +4,7 @@
         "description": "Raw block",
         "body": [
             "#raw() {",
-            "$1",
+            "\t$0",
             "}"
         ]
     },
@@ -20,7 +20,7 @@
         "description": "For loop",
         "body": [
             "#loop(${array}, \"${string}\") {",
-            "$1",
+            "\t$0",
             "}"
         ]
     },
@@ -29,9 +29,9 @@
         "description": "If-else condition",
         "body": [
             "#if(${boolean}) {",
-            "$1",
+            "\t$0",
             "} ##else() {",
-            "$2",
+            "\t$0",
             "}"
         ]
     },
@@ -47,7 +47,7 @@
         "description": "Export a Leaf block",
         "body": [
             "#export(\"${string}\") {",
-            "$1",
+            "\t$0",
             "}"
         ]
     },
