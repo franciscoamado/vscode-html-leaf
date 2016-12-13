@@ -1,7 +1,7 @@
 {
     "name": "html-leaf",
-    "displayName": "Leaf",
-    "description": "Leaf support for Visual Studio Code",
+    "displayName": "Leaf HTML",
+    "description": "Provides Syntax Highlighting to Leaf files.",
     "version": "0.0.1",
     "publisher": "Francisco",
     "engines": {
@@ -26,5 +26,11 @@
             "language": "leaf",
             "path": "./snippets/leaf-snippets.json"
         }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.0.0"
     }
 }
