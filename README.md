@@ -1,10 +1,10 @@
 # Leaf for Visual Studio Code
 
-This Extension adds HTML and custom syntax highlighting for [Leaf](https://github.com/vapor/leaf) files.
+This Extension adds HTML and custom syntax highlighting for [Leaf🍃](https://github.com/vapor/leaf) files.
 
-[Leaf](https://github.com/vapor/leaf) is an extensible templating language built for [Vapor](https://github.com/vapor/vapor).
+[Leaf🍃](https://github.com/vapor/leaf) is an extensible templating language built for [Vapor](https://github.com/vapor/vapor).
 
-No more unicolor syntax for your `.leaf`'s!
+No more boring syntax for your `.leaf`'s!
 
 ![preview.png](https://github.com/FranciscoAmado/vscode-html-leaf/raw/master/preview.png)
 
