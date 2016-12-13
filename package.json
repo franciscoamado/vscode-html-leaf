@@ -21,6 +21,10 @@
             "language": "leaf",
             "scopeName": "text.html.leaf",
             "path": "./syntaxes/leaf.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "leaf",
+            "path": "./snippets/leaf-snippets.json"
         }]
     }
 }

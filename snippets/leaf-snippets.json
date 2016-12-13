@@ -1,0 +1,38 @@
+{
+    "raw": {
+        "prefix": "raw",
+        "description": "Raw block",
+        "body": [
+            "#raw() {",
+            "$1",
+            "}"
+        ]
+    },
+    "tag": {
+        "prefix": "tag",
+        "description": "Empty tag",
+        "body": [
+            "#($1)!"
+        ]
+    },
+    "for loop": {
+        "prefix": "loop",
+        "description": "For loop",
+        "body": [
+            "#loop(${array}, \"${string}\") {",
+            "$1",
+            "}"
+        ]
+    },
+    "if-else condition": {
+        "prefix": "if-else",
+        "description": "If-else condition",
+        "body": [
+            "#if(${boolean}) {",
+            "$1",
+            "} ##else() {",
+            "$2",
+            "}"
+        ]
+    }
+}
