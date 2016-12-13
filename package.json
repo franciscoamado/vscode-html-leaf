@@ -1,0 +1,26 @@
+{
+    "name": "html-leaf",
+    "displayName": "Leaf",
+    "description": "Leaf support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "Francisco",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "leaf",
+            "aliases": ["Leaf", "leaf"],
+            "extensions": [".leaf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "leaf",
+            "scopeName": "text.html.leaf",
+            "path": "./syntaxes/leaf.tmLanguage.json"
+        }]
+    }
+}
