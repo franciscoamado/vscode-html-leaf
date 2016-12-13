@@ -1,6 +1,6 @@
 {
     "raw": {
-        "prefix": "raw",
+        "prefix": "#raw",
         "description": "Raw block",
         "body": [
             "#raw() {",
@@ -9,14 +9,14 @@
         ]
     },
     "tag": {
-        "prefix": "tag",
+        "prefix": "#tag",
         "description": "Empty tag",
         "body": [
-            "#($1)!"
+            "#($1)"
         ]
     },
     "for loop": {
-        "prefix": "loop",
+        "prefix": "#loop",
         "description": "For loop",
         "body": [
             "#loop(${array}, \"${string}\") {",
@@ -25,7 +25,7 @@
         ]
     },
     "if-else condition": {
-        "prefix": "if-else",
+        "prefix": "#if-else",
         "description": "If-else condition",
         "body": [
             "#if(${boolean}) {",
@@ -33,6 +33,29 @@
             "} ##else() {",
             "$2",
             "}"
+        ]
+    },
+    "import leaf": {
+        "prefix": "#import",
+        "description": "Import a Leaf file",
+        "body": [
+            "#import(\"${string}\")"
+        ]
+    },
+    "export leaf": {
+        "prefix": "#export",
+        "description": "Export a Leaf block",
+        "body": [
+            "#export(\"${string}\") {",
+            "$1",
+            "}"
+        ]
+    },
+    "extend leaf": {
+        "prefix": "#extend",
+        "description": "Extend from other Leaf file",
+        "body": [
+            "#extend(\"${string}\")"
         ]
     }
 }

@@ -12,9 +12,6 @@
 			"include": "#variables"
 		},
 		{
-			"include": "#blocks"
-		},
-		{
             "include": "text.html.basic"
         }
 	],
