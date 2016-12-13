@@ -2,7 +2,7 @@
     "name": "html-leaf",
     "displayName": "Leaf HTML",
     "description": "Provides Syntax Highlighting to Leaf files.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "Francisco",
     "engines": {
         "vscode": "^1.5.0"
@@ -19,21 +19,32 @@
         "url": "https://github.com/FranciscoAmado/vscode-html-leaf"
     },
     "contributes": {
-        "languages": [{
-            "id": "leaf",
-            "aliases": ["Leaf", "leaf"],
-            "extensions": [".leaf"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "leaf",
-            "scopeName": "text.html.leaf",
-            "path": "./syntaxes/leaf.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "leaf",
-            "path": "./snippets/leaf-snippets.json"
-        }]
+        "languages": [
+            {
+                "id": "leaf",
+                "aliases": [
+                    "Leaf",
+                    "leaf"
+                ],
+                "extensions": [
+                    ".leaf"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "leaf",
+                "scopeName": "text.html.leaf",
+                "path": "./syntaxes/leaf.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "leaf",
+                "path": "./snippets/leaf-snippets.json"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
