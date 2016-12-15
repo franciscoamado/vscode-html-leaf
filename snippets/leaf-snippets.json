@@ -37,7 +37,7 @@
     },
     "import leaf": {
         "prefix": "#import",
-        "description": "Import a Leaf file",
+        "description": "Import an exported Leaf block onto here",
         "body": [
             "#import(\"${string}\")"
         ]
@@ -56,6 +56,15 @@
         "description": "Extend from other Leaf file",
         "body": [
             "#extend(\"${string}\")"
+        ]
+    },
+    "embed leaf": {
+        "prefix": "#embed",
+        "description": "Embed leaf into your tree",
+        "body": [
+            "#embed(\"${string}\") {",
+            "\t$0",
+            "}"
         ]
     }
 }
