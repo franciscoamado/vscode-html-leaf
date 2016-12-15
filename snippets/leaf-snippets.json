@@ -62,9 +62,7 @@
         "prefix": "#embed",
         "description": "Embed leaf into your tree",
         "body": [
-            "#embed(\"${string}\") {",
-            "\t$0",
-            "}"
+            "#embed(\"${string}\")"
         ]
     }
 }

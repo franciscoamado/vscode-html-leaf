@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "html-leaf" extension will be documented in this file.
 
+### 0.1.2
+
+* Fixes broken `embed` snippet 😅 - franciscoamado
+
 ### 0.1.1
 
 * Added `embed` snippet - franciscoamado
