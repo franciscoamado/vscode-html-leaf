@@ -10,14 +10,10 @@ No more boring syntax for your `.leaf`'s!
 
 ## Features
 
-> Syntax highlighting
+> Syntax highlighting for your eyes!
 
-> Simple leaf snippets
+> Simple Leaf snippets for when you don't remember those tags
 
-
-### 1.0.0
-
-Initial release of html-leaf which contains the syntax highlighting and some simple snippets.
 
 ## Contributions?
 
