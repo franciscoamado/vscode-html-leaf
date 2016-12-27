@@ -24,11 +24,18 @@
             "}"
         ]
     },
+    "index": {
+        "prefix": "#index",
+        "description": "Index of object from array",
+        "body": [
+            "#index(${array}, \"${object}\")"
+        ]
+    },
     "if-else condition": {
         "prefix": "#if-else",
         "description": "If-else condition",
         "body": [
-            "#if(${boolean}) {",
+            "#if(${bool}) {",
             "\t$0",
             "} ##else() {",
             "\t$0",
