@@ -35,6 +35,15 @@
             "}"
         ]
     },
+    "equal": {
+        "prefix": "#equal",
+        "description": "Execute block if objects match",
+        "body": [
+            "#equal(${lhs}, ${rhs}) {",
+            "\t$0",
+            "}"
+        ]
+    },
     "import leaf": {
         "prefix": "#import",
         "description": "Import an exported Leaf block onto here",
