@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "html-leaf" extension will be documented in this file.
 
+### 0.1.3
+
+* Added `index` snippet - franciscoamado
+* Added `equal` snippet - franciscoamado
+
 ### 0.1.2
 
 * Fixes broken `embed` snippet 😅 - franciscoamado
