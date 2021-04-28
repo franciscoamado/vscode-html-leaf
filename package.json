@@ -2,7 +2,7 @@
     "name": "html-leaf",
     "displayName": "Leaf HTML",
     "description": "Provides Syntax Highlighting to Leaf files.",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "publisher": "Francisco",
     "engines": {
         "vscode": "^1.5.0"
