@@ -1,13 +1,4 @@
 {
-    "raw": {
-        "prefix": "#raw",
-        "description": "Raw block",
-        "body": [
-            "#raw() {",
-            "\t$0",
-            "}"
-        ]
-    },
     "tag": {
         "prefix": "#tag",
         "description": "Empty tag",
@@ -15,70 +6,138 @@
             "#($1)"
         ]
     },
-    "for loop": {
-        "prefix": "#loop",
-        "description": "For loop",
+    "extend leaf": {
+        "prefix": "#extend",
+        "description": "Extend from other Leaf file",
         "body": [
-            "#loop(${array}, \"${string}\") {",
-            "\t$0",
-            "}"
+            "#extend(\"${file}\")"
         ]
     },
-    "index": {
-        "prefix": "#index",
-        "description": "Index of object from array",
+    "extend with block": {
+        "prefix": "#extendblock",
+        "description": "Extend with a block from other Leaf file",
         "body": [
-            "#index(${array}, \"${object}\")"
-        ]
-    },
-    "if-else condition": {
-        "prefix": "#if-else",
-        "description": "If-else condition",
-        "body": [
-            "#if(${bool}) {",
+            "#extend(\"${file}\"):",
             "\t$0",
-            "} ##else() {",
-            "\t$0",
-            "}"
-        ]
-    },
-    "equal": {
-        "prefix": "#equal",
-        "description": "Execute block if objects match",
-        "body": [
-            "#equal(${lhs}, ${rhs}) {",
-            "\t$0",
-            "}"
-        ]
-    },
-    "import leaf": {
-        "prefix": "#import",
-        "description": "Import an exported Leaf block onto here",
-        "body": [
-            "#import(\"${string}\")"
+            "#endextend"
         ]
     },
     "export leaf": {
         "prefix": "#export",
         "description": "Export a Leaf block",
         "body": [
-            "#export(\"${string}\") {",
+            "#export(\"${tag}\"):",
             "\t$0",
-            "}"
+            "#endexport"
         ]
     },
-    "extend leaf": {
-        "prefix": "#extend",
-        "description": "Extend from other Leaf file",
+    "extend and export": {
+        "prefix": "#extendexport",
+        "description": "Extend and export from other Leaf file",
         "body": [
-            "#extend(\"${string}\")"
+            "#extend(\"${file}\"):",
+            "\t#export(\"${tag}\"):",
+            "\t\t$0",
+            "\t#endexport",
+            "#endextend"
         ]
     },
-    "embed leaf": {
-        "prefix": "#embed",
-        "description": "Embed leaf into your tree",
+    "import leaf": {
+        "prefix": "#import",
+        "description": "Import an exported Leaf block onto here",
         "body": [
-            "#embed(\"${string}\")"
+            "#import(\"${file}\")"
+        ]
+    },
+    "for loop": {
+        "prefix": "#for",
+        "description": "For loop",
+        "body": [
+            "#for(${object} in ${array}):",
+            "\t$0",
+            "#endfor"
+        ]
+    },
+    "if condition": {
+        "prefix": "#if",
+        "description": "If condition",
+        "body": [
+            "#if(${bool}):",
+            "\t$0",
+            "#endif"
+        ]
+    },
+    "if-else condition": {
+        "prefix": "#if-else",
+        "description": "If-else condition",
+        "body": [
+            "#if(${bool}):",
+            "\t$0",
+            "#else:",
+            "\t$1",
+            "#endif"
+        ]
+    },
+    "if-else-if condition": {
+        "prefix": "#if-else-if",
+        "description": "If-else-if condition",
+        "body": [
+            "#if(${bool}):",
+            "\t$2",
+            "#elseif($3):",
+            "\t$4",
+            "#endif"
+        ]
+    },
+    "count": {
+        "prefix": "#count",
+        "description": "Count tag returns the number of items in an array",
+        "body": [
+            "#count(${array})"
+        ]
+    },
+    "lowercased": {
+        "prefix": "#lowercased",
+        "description": "Lowercased tag lowercases all letters in a string.",
+        "body": [
+            "#lowercased(${string})"
+        ]
+    },
+    "uppercased": {
+        "prefix": "#uppercased",
+        "description": "Uppercased tag uppercases all letters in a string.",
+        "body": [
+            "#uppercased(${string})"
+        ]
+    },
+    "capitalized": {
+        "prefix": "#capitalized",
+        "description": "Capitalized tag uppercases the first letter in each word of a string and lowercases the others.",
+        "body": [
+            "#capitalized(${string})"
+        ]
+    },
+    "contains": {
+        "prefix": "#contains",
+        "description": "Contains tag accepts an array and a value as its two parameters, and returns true if the array in parameter one contains the value in parameter two.",
+        "body": [
+            "#if(contains(${value}, ${array})):",
+            "\t$0",
+            "#endif"
+        ]
+    },
+    "date": {
+        "prefix": "#date",
+        "description": "Date tag formats dates into a readable string.",
+        "body": [
+            "#date(${string})"
+        ]
+    },
+    "date-format": {
+        "prefix": "#date-format",
+        "description": "Date tag formats dates into a custom date formatter string as the second argument.",
+        "body": [
+            "#date(${string}, \"${format}\")"
         ]
     }
 }

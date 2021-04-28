@@ -10,14 +10,13 @@ No more boring syntax for your `.leaf`'s!
 
 ## Features
 
-> Syntax highlighting for your eyes!
-
-> Simple Leaf snippets for when you don't remember those tags
+- Syntax highlighting for your eyes!
+- Simple Leaf snippets for when you don't remember those tags.
 
 
 ## Contributions?
 
-Let me know on [github](https://github.com/FranciscoAmado/vscode-html-leaf) 
+Let me know on [github](https://github.com/FranciscoAmado/vscode-html-leaf)
 
 ## Aditional Information
 
