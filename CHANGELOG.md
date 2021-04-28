@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "html-leaf" extension will be documented in this file.
 
+### 0.2.0
+
+* Updates Grammar patterns for supporting Leaf 4.0 - franciscoamado
+* Updates Snippets and Language Configurations - franciscoamado
+
 ### 0.1.3
 
 * Added `index` snippet - franciscoamado
