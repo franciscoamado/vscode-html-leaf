@@ -1,0 +1,42 @@
+<!-- Base example -->
+#(variable)
+#extend("template"): I'm added to a base template! #endextend
+#export("title"): Welcome to Vapor #endexport
+#import("body")
+#count(friends)
+#for(friend in friends): <li>#(friend.name)</li> #endfor
+
+<!-- Conditions -->
+#if(1 + 1 == 2):
+    Hello!
+#endif
+
+#if(index % 2 == 0):
+    This is even index.
+#else:
+    This is odd index.
+#endif
+
+#if(title == "Welcome"):
+    Hello new user!
+#elseif(title == "Welcome back!"):
+    Hello old user
+#else:
+    Unexpected page!
+#endif
+
+<!-- Loops -->
+Planets:
+<ul>
+#for(planet in planets):
+    <li>#(planet)</li>
+#endfor
+</ul>
+
+<!-- Other Tags -->
+#count(array)
+#lowercased("STRING")
+#uppercased("string")
+#capitalized("string")
+#date(now)
+#date(now, "yyyy-MM-dd")

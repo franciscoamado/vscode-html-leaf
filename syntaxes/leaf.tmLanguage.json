@@ -19,41 +19,105 @@
 		"tags": {
 			"patterns": [{
 				"name": "meta.tag.leaf",
-				"match": "(#{1,2})(\\w*)?(\\({1,})([^)]*)(\\){1,})\\s*",
+				"match": "(#{1,2})(\\w*)?(\\({1,})([^)]*)(\\){1,}:?)\\s*",
     			"captures": {
-					"1": { 
+					"1": {
 						"name": "keyword.control.leaf"
 					},
-					"2": { 
+					"2": {
 						"name": "entity.name.tag.leaf"
 					},
-					"3": { 
+					"3": {
 						"name": "constant.other.begin.leaf"
 					},
-					"4": { 
+					"4": {
 						"name": "string.quoted.double.html"
 					},
-					"5": { 
+					"5": {
 						"name": "constant.other.end.leaf"
 					}
 				}
-			}]
+			},
+			{
+				"name": "block.tag.leaf",
+				"match": "(#{1,2})(\\w*)?(\\({1,})([^)]*)(\\){0,1})\\s*",
+    			"captures": {
+					"1": {
+						"name": "keyword.control.leaf"
+					},
+					"2": {
+						"name": "entity.name.tag.leaf"
+					},
+					"3": {
+						"name": "constant.other.begin.leaf"
+					},
+					"4": {
+						"name": "string.quoted.double.html"
+					},
+					"5": {
+						"name": "constant.other.end.leaf"
+					}
+				}
+			},
+			{
+				"name": "elseblock.tag.leaf",
+				"match": "(#{1,2})(else)(:)?\\s*",
+    			"captures": {
+					"1": {
+						"name": "keyword.control.leaf"
+					},
+					"2": {
+						"name": "entity.name.tag.leaf"
+					},
+					"3": {
+						"name": "constant.other.begin.leaf"
+					},
+					"4": {
+						"name": "string.quoted.double.html"
+					},
+					"5": {
+						"name": "constant.other.end.leaf"
+					}
+				}
+			},
+			{
+				"name": "endblock.tag.leaf",
+				"match": "(#{1,2})(end\\w*)\\s*",
+    			"captures": {
+					"1": {
+						"name": "keyword.control.leaf"
+					},
+					"2": {
+						"name": "entity.name.tag.leaf"
+					},
+					"3": {
+						"name": "constant.other.begin.leaf"
+					},
+					"4": {
+						"name": "string.quoted.double.html"
+					},
+					"5": {
+						"name": "constant.other.end.leaf"
+					}
+				}
+			}
+		]
 		},
 		"variables": {
 			"patterns": [{
 				"name": "meta.variable.leaf",
 				"match": "(#{1,2})(\\({1,})([^)]*)(\\))",
 				"captures": {
-					"1": { 
+					"1": {
 						"name": "keyword.control.leaf"
 					},
-					"2": { 
+					"2": {
 						"name": "constant.other.begin.leaf"
 					},
-					"3": { 
+					"3": {
 						"name": "string.quoted.double.html"
 					},
-					"4": { 
+					"4": {
 						"name": "constant.other.end.leaf"
 					}
 				}
