@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "html-leaf" extension will be documented in this file.
 
+### 0.2.1
+
+* Updates Grammar start pattern for supporting whitespaces - franciscoamado
+
 ### 0.2.0
 
 * Updates Grammar patterns for supporting Leaf 4.0 - franciscoamado
