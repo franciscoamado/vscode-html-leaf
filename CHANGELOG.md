@@ -1,5 +1,10 @@
 # Change Log
+
 All notable changes to the "html-leaf" extension will be documented in this file.
+
+### 0.2.2
+
+* Added `#comment` support - ptoffy
 
 ### 0.2.1
 
