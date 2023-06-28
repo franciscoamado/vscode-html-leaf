@@ -89,6 +89,15 @@
             "#endif"
         ]
     },
+    "comment": {
+        "prefix": "#comment",
+        "description": "Comment",
+        "body": [
+            "#comment:",
+            "\t$0",
+            "#endcomment"
+        ]
+    },
     "count": {
         "prefix": "#count",
         "description": "Count tag returns the number of items in an array",
